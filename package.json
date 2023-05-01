@@ -5,7 +5,7 @@
   "homepage": "https://github.com/ozeransm/goit-js-hw-08.git",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08.git/"
+    "build": "parcel build src/*.html --public-url /ozeransm/goit-js-hw-08.git/"
   },
   "repository": {
     "type": "git",
