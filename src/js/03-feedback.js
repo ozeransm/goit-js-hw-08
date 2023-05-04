@@ -13,7 +13,7 @@ if(localStorage.getItem("feedback-form-state")){
 function handleBtn(ev){
     ev.preventDefault();
     console.log(JSON.parse(localStorage.getItem("feedback-form-state")));
-    localStorage.clear();
+    localStorage.removeItem("feedback-form-state");
     form.reset();
 }
 
