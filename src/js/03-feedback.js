@@ -12,9 +12,15 @@ if(localStorage.getItem("feedback-form-state")){
 
 function handleBtn(ev){
     ev.preventDefault();
-    console.log(JSON.parse(localStorage.getItem("feedback-form-state")));
-    localStorage.removeItem("feedback-form-state");
-    form.reset();
+    let formData = JSON.parse(localStorage.getItem("feedback-form-state"));
+    if((form.elements.email.value.trim())&&(form.elements.message.value.trim())){
+        console.log(formData);
+        localStorage.removeItem("feedback-form-state");
+        form.reset();
+        formData = {};
+                
+    }else alert("fill in all fields of the form");
+    
 }
 
 function handleForm(){

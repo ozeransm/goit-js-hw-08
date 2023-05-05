@@ -13,4 +13,4 @@ const imagesGallery = galleryItems.reduce((img,{preview,description,original})=>
 gallery.insertAdjacentHTML('afterbegin', imagesGallery);
 // console.log(imagesGallery);
 
-new SimpleLightbox('.gallery a',{captionDelay:250});
+new SimpleLightbox('.gallery a',{captionDelay:250,captionsData:'title'});
